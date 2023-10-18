@@ -4,10 +4,6 @@
   "version": "0.0.1",
   "description": "Russian translator subtitle for udemy.com",
   "permissions": [
-    "activeTab",
-    "scripting",
-    "contextMenus",
-    "notifications",
     "storage"
   ],
   "background": {

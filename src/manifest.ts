@@ -7,10 +7,6 @@ const manifest: ManifestType = {
   version: packageJson.version,
   description: packageJson.description,
   permissions: [
-    "activeTab",
-    "scripting",
-    "contextMenus",
-    "notifications",
     "storage"
   ],
   background: { service_worker: "src/background/index.js" },

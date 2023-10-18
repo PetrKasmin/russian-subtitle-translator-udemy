@@ -1,8 +1,8 @@
 {
-  "name": "russian-subtitle-translator-udemy",
+  "name": "translator-subtitle-udemy",
   "author": "PetrKasmin",
   "version": "0.0.1",
-  "description": "Russian translator subtitle for udemy.com",
+  "description": "Translation of subtitles for the udemy.com",
   "license": "MIT",
   "repository": {
     "type": "git",
