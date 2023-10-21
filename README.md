@@ -28,3 +28,9 @@ This is a Chrome extension that enhances your Udemy learning experience by provi
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<div align="center">
+  <img src="public/screenshot_1.png" alt="logo"/>
+  <img src="public/screenshot_2.png" alt="logo"/>
+  <img src="public/screenshot_3.png" alt="logo"/>
+</div>
