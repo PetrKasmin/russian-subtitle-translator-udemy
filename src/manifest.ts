@@ -3,7 +3,7 @@ import type { ManifestType } from "./manifest-type";
 
 const manifest: ManifestType = {
   manifest_version: 3,
-  name: packageJson.name,
+  name: "Udemy Translate",
   version: packageJson.version,
   description: packageJson.description,
   permissions: [
@@ -15,7 +15,9 @@ const manifest: ManifestType = {
     default_icon: "32.png",
   },
   icons: {
-    "128": "128.png",
+    "16": "16.png",
+    "32": "32.png",
+    "192": "192.png"
   },
   content_security_policy: {
     extension_pages: "script-src 'self'; object-src 'self'"
@@ -30,7 +32,7 @@ const manifest: ManifestType = {
   ],
   web_accessible_resources: [
     {
-      resources: ["128.png", "48.png"],
+      resources: ["192.png", "32.png"],
       matches: ["*://*/*"],
     },
   ],

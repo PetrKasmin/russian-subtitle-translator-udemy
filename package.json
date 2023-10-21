@@ -1,7 +1,7 @@
 {
   "name": "translator-subtitle-udemy",
   "author": "PetrKasmin",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Translation of subtitles for the udemy.com",
   "license": "MIT",
   "repository": {
@@ -16,6 +16,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "vue": "^3.2.37"
   },
   "engines": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/chrome": "^0.0.195",
+    "@types/lodash": "^4.14.200",
     "@types/node": "^16.11.56",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",

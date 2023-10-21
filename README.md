@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/128.png" alt="logo"/>
+  <img src="public/192.png" alt="logo"/>
   <p> <a target="_blank" href="https://www.udemy.com/">www.udemy.com</a></p>
   <h1> Chrome extension <br>for russian translate subtitle <br>Udemy.com</h1>
 </div>
