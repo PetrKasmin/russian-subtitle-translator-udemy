@@ -1,7 +1,7 @@
 {
   "name": "translator-subtitle-udemy",
   "author": "PetrKasmin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Translation of subtitles for the udemy.com",
   "license": "MIT",
   "repository": {

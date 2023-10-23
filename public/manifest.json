@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Udemy Translate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Translation of subtitles for the udemy.com",
   "permissions": [
     "storage"
