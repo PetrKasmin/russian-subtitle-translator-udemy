@@ -15,6 +15,7 @@ const service: Service = new Service({
     config: {
         boxSelector: 'captions-display--captions-container',
         textSelector: 'captions-display--captions-cue-text',
+        videoSelector: '.vjs-tech',
     } as Config,
     settings: {
         subtitleEnabled: false,

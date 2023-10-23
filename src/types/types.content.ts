@@ -10,6 +10,7 @@ export interface Settings {
 export interface Config {
     boxSelector: string;
     textSelector: string;
+    videoSelector: string;
 }
 
 export interface Params {

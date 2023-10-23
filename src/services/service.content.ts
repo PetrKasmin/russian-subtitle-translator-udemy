@@ -92,15 +92,19 @@ export default class Service {
         }
     }
 
+    startTranslateTranscript() {
+        // const spans = document.querySelectorAll('span[data-purpose="cue-text"]');
+    }
+
     awaitRender() {
-        const awaitRenderSelector: string = this.config.boxSelector;
-        const startTranslate = this.startTranslate;
-        const observer = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
                 const divHTML: HTMLDivElement = mutation.target as HTMLDivElement;
-                if (divHTML?.classList?.value.includes(awaitRenderSelector)) {
-                    startTranslate();
+                if (divHTML?.classList?.value.includes(this.config.boxSelector)) {
+                    this.startTranslate();
+                    this.startTranslateTranscript();
                     observer.disconnect();
+                    this.watchLectureContainer();
                 }
             });
         });
@@ -109,6 +113,24 @@ export default class Service {
             childList: true,
             subtree: true
         });
+    }
+
+    watchLectureContainer() {
+        const videoSelector = document.querySelector(this.config.videoSelector) as HTMLDivElement;
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+                    observer.disconnect();
+
+                    if (this.observer) {
+                        this.observer.disconnect();
+                    }
+                    this.awaitRender();
+                }
+            });
+        });
+
+        observer.observe(videoSelector, { attributes: true });
     }
 
     init() {
